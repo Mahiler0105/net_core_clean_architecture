@@ -3,11 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.ConsoleApp", "CleanArchitecture.ConsoleApp\CleanArchitecture.ConsoleApp.csproj", "{97E54FB2-C19F-43C6-88E9-7D0CA4AA7558}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C84A1B7D-47ED-444A-B8BB-3456C859F9B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Data", "CleanArchitecture.Data\CleanArchitecture.Data.csproj", "{0E124637-3BA9-45FE-87D7-6C5A412CC0E3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{8B72C41B-280A-46B5-AA32-7F979A80E0BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{A475F45E-650F-45D9-85AB-81B2D3553A49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.API", "src\API\CleanArchitecture.API\CleanArchitecture.API.csproj", "{0C8531A8-E189-4A59-8D5C-C28344289C2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E6222265-CFF1-4B18-ACB5-14150F93C083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Infrastructure", "src\Infrastructure\CleanArchitecture.Infrastructure\CleanArchitecture.Infrastructure.csproj", "{14DABFD2-3867-4402-A4AA-3F061BD1D3A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{18DCD5E3-CA94-452E-BB23-51B18C6D910B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Application", "src\Core\CleanArchitecture.Application\CleanArchitecture.Application.csproj", "{8F575F62-0BF3-46F2-8B0E-CD6B1FC655A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchitecture.Domain", "src\Core\CleanArchitecture.Domain\CleanArchitecture.Domain.csproj", "{063A2D30-6AAD-4CDC-8D60-6D65BE2DBD73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +40,30 @@ Global
 		{A475F45E-650F-45D9-85AB-81B2D3553A49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A475F45E-650F-45D9-85AB-81B2D3553A49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A475F45E-650F-45D9-85AB-81B2D3553A49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8531A8-E189-4A59-8D5C-C28344289C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8531A8-E189-4A59-8D5C-C28344289C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8531A8-E189-4A59-8D5C-C28344289C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8531A8-E189-4A59-8D5C-C28344289C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14DABFD2-3867-4402-A4AA-3F061BD1D3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14DABFD2-3867-4402-A4AA-3F061BD1D3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14DABFD2-3867-4402-A4AA-3F061BD1D3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14DABFD2-3867-4402-A4AA-3F061BD1D3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F575F62-0BF3-46F2-8B0E-CD6B1FC655A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F575F62-0BF3-46F2-8B0E-CD6B1FC655A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F575F62-0BF3-46F2-8B0E-CD6B1FC655A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F575F62-0BF3-46F2-8B0E-CD6B1FC655A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{063A2D30-6AAD-4CDC-8D60-6D65BE2DBD73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063A2D30-6AAD-4CDC-8D60-6D65BE2DBD73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063A2D30-6AAD-4CDC-8D60-6D65BE2DBD73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063A2D30-6AAD-4CDC-8D60-6D65BE2DBD73}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B72C41B-280A-46B5-AA32-7F979A80E0BF} = {C84A1B7D-47ED-444A-B8BB-3456C859F9B6}
+		{0C8531A8-E189-4A59-8D5C-C28344289C2B} = {8B72C41B-280A-46B5-AA32-7F979A80E0BF}
+		{E6222265-CFF1-4B18-ACB5-14150F93C083} = {C84A1B7D-47ED-444A-B8BB-3456C859F9B6}
+		{14DABFD2-3867-4402-A4AA-3F061BD1D3A3} = {E6222265-CFF1-4B18-ACB5-14150F93C083}
+		{18DCD5E3-CA94-452E-BB23-51B18C6D910B} = {C84A1B7D-47ED-444A-B8BB-3456C859F9B6}
+		{8F575F62-0BF3-46F2-8B0E-CD6B1FC655A1} = {18DCD5E3-CA94-452E-BB23-51B18C6D910B}
+		{063A2D30-6AAD-4CDC-8D60-6D65BE2DBD73} = {18DCD5E3-CA94-452E-BB23-51B18C6D910B}
 	EndGlobalSection
 EndGlobal

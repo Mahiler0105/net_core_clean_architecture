@@ -1,8 +1,8 @@
-using CleanArchitecture.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+// using src/Core;
 
-namespace CleanArchitecture.Data
+namespace CleanArchitecture.Infrastructure
 {
     public class StreamerDbContext : DbContext
     {
@@ -13,8 +13,7 @@ namespace CleanArchitecture.Data
             .EnableSensitiveDataLogging();
         }
 
-        public DbSet<Streamer>? Streamers { get; set; }
+        public DbSet<Class1>? Streamers { get; set; }
         public DbSet<Video>? Videos { get; set; }
-
     }
 }
